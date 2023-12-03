@@ -1,0 +1,15 @@
+/*Fade-in animation for the sections*/
+
+section{
+    animation: section-loading 2000ms;
+}
+
+@keyframes section-loading{
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
