@@ -6,3 +6,12 @@ AH00558: httpd.exe: Could not reliably determine the server's fully qualified do
 AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::9bb1:e641:9cbe:c634. Set the 'ServerName' directive globally to suppress this message
 AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::9bb1:e641:9cbe:c634. Set the 'ServerName' directive globally to suppress this message
 [Sat Dec 02 12:40:07.313568 2023] [mpm_winnt:notice] [pid 26588:tid 796] AH00354: Child: Starting 64 worker threads.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::9bb1:e641:9cbe:c634. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 03 15:12:12.112704 2023] [core:warn] [pid 25740:tid 736] AH00098: pid file C:/Users/Batis/AppData/Roaming/Local/run/Sfolr7z1X/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Dec 03 15:12:12.115695 2023] [mpm_winnt:notice] [pid 25740:tid 736] AH00455: Apache/2.4.43 (Win32) mod_fcgid/2.3.9a configured -- resuming normal operations
+[Sun Dec 03 15:12:12.115695 2023] [mpm_winnt:notice] [pid 25740:tid 736] AH00456: Server built: Apr 21 2020 13:46:54
+[Sun Dec 03 15:12:12.115695 2023] [core:notice] [pid 25740:tid 736] AH00094: Command line: 'C:\\Users\\Batis\\AppData\\Roaming\\Local\\lightning-services\\apache-2.4.43+8\\bin\\win32\\bin\\httpd.exe -d C:/Users/Batis/AppData/Roaming/Local/lightning-services/apache-2.4.43+8/bin/win32 -D FOREGROUND -f C:\\Users\\Batis\\AppData\\Roaming\\Local\\run\\Sfolr7z1X\\conf\\apache\\apache2.conf'
+[Sun Dec 03 15:12:12.121677 2023] [mpm_winnt:notice] [pid 25740:tid 736] AH00418: Parent: Created child process 23040
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::9bb1:e641:9cbe:c634. Set the 'ServerName' directive globally to suppress this message
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::9bb1:e641:9cbe:c634. Set the 'ServerName' directive globally to suppress this message
+[Sun Dec 03 15:12:12.605698 2023] [mpm_winnt:notice] [pid 23040:tid 796] AH00354: Child: Starting 64 worker threads.
