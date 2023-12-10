@@ -1,0 +1,303 @@
+/*General style modifications*/
+
+:root {
+  --rotate: 15s;
+  --posX: 0;
+}
+
+.hide {
+  opacity: 0;
+}
+
+#page {
+  position: relative;
+}
+  
+main {
+  overflow: hidden;
+}
+
+
+/*navigation*/
+
+.main-navigation.toggled ul {
+	display: flex !important;
+}
+
+#site-navigation {
+  position: relative;
+}
+
+
+/*Hero header CSS*/
+
+.banner {
+position: relative;
+object-fit: contain;
+height: 800px;
+background-image: none;
+
+  &__fallback {
+    z-index: -2;
+     opacity: 1;
+    left: auto !important;
+    max-width: 100%;
+    overflow: hidden;  
+  }
+  &__video {  
+    z-index: 1;
+    opacity: 1;
+    left: auto !important;
+  }
+}
+  
+.banner__fallback, .banner__video {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  min-width: 1440px !important;  
+  animation: fade-in-from-top 2s 300ms both;
+}
+  
+.banner__logo {
+  position: sticky;
+  top: 80px;
+  z-index: 10;
+  opacity: 1;
+  animation: fade-in-from-bottom 2s 300ms both, float 6s 2s infinite ease-in-out;  
+}
+  
+/*Fade-in animation for the sections, they have to came from the top*/
+
+section{
+  animation: fade-in-from-top 1.5s ease-in-out;
+}
+
+@keyframes fade-in-from-top{
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+  }
+}
+
+.fade-in-from-bottom {
+  animation: fade-in-from-bottom 2s 300ms both;  
+}
+
+@keyframes fade-in-from-bottom{
+  from {
+    transform: translateY(500px);
+    opacity: 0;
+  }
+  
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/*Floatting effect*/
+
+@keyframes float {
+  0% {
+    transform: translate3d(3px,6px,0);
+  }
+
+  10% {
+    transform: translate3d(0px,5px,0);
+  }
+
+  30% {
+    transform: translate3d(3px,-3px,0);
+  }
+
+  43% {
+    transform: translate3d(6px,0px,0);
+  }
+
+  50% {
+    transform: translate3d(-1px,-3px,0);
+  }
+  
+  60% {
+    transform: translate3d(2px,-1px,0);
+  }
+
+  72% {
+    transform: translate3d(-8px,5px,0);
+  }
+
+  85% {
+    transform: translate3d(-2px,1px,0);
+  }
+
+  100% {
+    transform: translate3d(3px,6px,0); 
+  }
+}
+
+/* Infinite rotation animation for flowers*/
+
+::after, #studio h2::before, .site-footer::before {
+  animation: flower-rotation 20s linear infinite;
+}
+
+@keyframes flower-rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Place section*/
+#place {
+  position:relative;
+  background-image: url("../images/Studio_Koukaki-image_place.png");
+  z-index: -1;
+}
+
+/*Cloud animation*/
+
+.place--cloud {
+  position: absolute;
+  filter: blur(12px);
+  -webkit-filter: blur(12px);
+  -moz-filter: blur(12px);
+  z-index: 2;
+
+  &__big{
+    height: 122px;	
+    top: 70px;
+    right: 90px;
+    transform: translateX(var(--posX));
+  }
+
+  &__little{
+    height: 55px;	
+    top: 250px;
+    right: 500px;
+    transform: translateX(var(--posX));
+  }
+}
+
+/*Characters section*/
+
+#characters {
+	margin: 6em;
+	display: flex;
+	flex-direction: column;
+}
+
+/*Final-section style*/
+
+.oscars {  
+  position: relative;
+  padding: 150px 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 0;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    position: relative;
+
+    & img {
+      height: 100%;
+    }
+
+    & h3 {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      line-height: 3.2rem;
+      text-align: left;
+    }
+  }
+
+  & img {
+    height: 100%;
+  }
+}
+
+/* Titles style*/
+
+.story > h2,
+.studio >  h2,
+#characters > h3,
+#place h3 {
+  color: transparent;
+  height: 202px;
+}
+  
+.story > h2,
+.studio >  h2,
+#characters > h3 {
+  z-index: -1;
+}
+  
+  
+#place h3 {
+  z-index: 4;
+}
+  
+.story > h2,
+.studio >  h2 {
+  width: 100%;
+}
+  
+#characters > h3,
+#place h3  {
+  position: relative;
+  width: 40%;
+}
+  
+.story > h2 span,
+.studio > h2 span,
+#characters span,
+#place span{
+  position: absolute;
+  color: #FFF5E9;
+  opacity: 0;
+  z-index: 4;
+}
+  
+.story > h2 span,
+.studio > h2 span,
+#characters span,
+#place{
+  top: 100px;  
+}
+  
+.story #characters,
+#characters > h3 span,
+#place span{
+  width: 100%;
+}  
+
+/*Titles animation*/  
+
+.title-animation {
+  animation: title-animation 1s 1s forwards;
+}
+
+@keyframes title-animation {
+	from {
+    transform: translate3d(-50%, 50%, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(-50%, -50%, 0);
+    opacity: 1;
+  }
+}

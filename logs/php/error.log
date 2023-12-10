@@ -1,0 +1,20 @@
+[06-Dec-2023 11:56:03 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "jquerry" in C:\Users\Batis\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php:6
+Stack trace:
+#0 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php(324): theme_enqueue_styles('')
+#1 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\script-loader.php(2262): do_action('wp_enqueue_scri...')
+#4 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#5 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\general-template.php(3052): do_action('wp_head')
+#8 C:\Users\Batis\Local Sites\koukaki\app\public\wp-content\themes\foce\header.php(20): wp_head()
+#9 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\template.php(790): require_once('C:\\Users\\Batis\\...')
+#10 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\template.php(725): load_template('C:\\Users\\Batis\\...', true, Array)
+#11 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#12 C:\Users\Batis\Local Sites\koukaki\app\public\wp-content\themes\foce-child\front-page.php(3): get_header()
+#13 C:\Users\Batis\Local Sites\koukaki\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\Batis\\...')
+#14 C:\Users\Batis\Local Sites\koukaki\app\public\wp-blog-header.php(19): require_once('C:\\Users\\Batis\\...')
+#15 C:\Users\Batis\Local Sites\koukaki\app\public\index.php(17): require('C:\\Users\\Batis\\...')
+#16 {main}
+  thrown in C:\Users\Batis\Local Sites\koukaki\app\public\wp-content\themes\foce-child\functions.php on line 6
